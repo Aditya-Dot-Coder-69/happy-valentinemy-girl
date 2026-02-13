@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SAMRITA MY 2nd Home💫</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(180deg, #ffd6e8, #c3f0ff, #e0c3fc);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-top: 40px;
+    color: #ff4d88;
+    font-size: 2.8em;
+}
+
+.section {
+    margin: 60px auto;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Video Box */
+.video-box {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Reasons styling */
+.reason {
+    background: white;
+    margin: 40px 0;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-size: 1.2em;
+    color: #6a1b9a;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reason.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.letter {
+    font-size: 2em;
+    color: #ff4d88;
+    font-weight: bold;
+}
+
+/* Music control hint */
+.music-note {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+</style>
+</head>
+<body>
+
+<h1>Our Special Moments 🎥💞</h1>
+
+<div class="section video-box">
+    <!-- 🎥 ADD YOUR VIDEO FILE BELOW -->
+    <video width="100%" controls>
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+</div>
+
+<div class="music-note">🎵 A song is playing in the background just for us</div>
+
+<!-- 🎵 BACKGROUND MUSIC -->
+<audio autoplay loop>
+    <source src="your-song.mp3" type="audio/mpeg">
+</audio>
+
+<h1>7 Reasons Why I Love You 💖</h1>
+
+<div class="section">
+
+    <div class="reason">
+        <span class="letter">S</span> — Your smile can fix my worst days instantly.
+    </div>
+
+    <div class="reason">
+        <span class="letter">A</span> — The affection you show makes me feel truly loved.
+    </div>
+
+    <div class="reason">
+        <span class="letter">M</span> — The peace I feel when I’m with you is something I’ve truly been searching for, and I never want to lose it.
+    </div>
+
+    <div class="reason">
+        <span class="letter">R</span> — The reassurance you give just by being there.
+    </div>
+
+    <div class="reason">
+        <span class="letter">I</span> — Your innocent(Let), pure heart that makes you so special.
+    </div>
+
+    <div class="reason">
+        <span class="letter">T</span> —Our trust is the foundation of our beautiful bond, and I want you with me for every breath of my life.
+    </div>
+
+    <div class="reason">
+        <span class="letter">A</span> — Absolutely everything about you that makes my world brighter.
+    </div>
+
+</div>
+
+<script>
+// Scroll animation for reasons
+const reasons = document.querySelectorAll('.reason');
+
+window.addEventListener('scroll', () => {
+    reasons.forEach(reason => {
+        const position = reason.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (position < screenHeight - 100) {
+            reason.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+<h1>A Message From My Heart 💌</h1>
+
+<div class="section video-box">
+    <p style="font-size:1.2em; color:#6a1b9a; line-height:1.6;">
+        Samrita,  
+
+        From the moment you came into my life, everything started feeling a little more beautiful, a little more meaningful.  
+        This little universe we’re building is made of laughter, late-night talks, small silly moments, and big feelings I never knew I could have.  
+
+        You are my comfort, my happiness, and my favorite person to share life with.  
+        No matter where life takes us, I want you to know that you are deeply loved, truly appreciated, and forever special to me. 💖  
+
+        — Yours
+    </p>
+</div>
+
+</html>
